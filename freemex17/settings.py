@@ -181,21 +181,21 @@ SOCIAL_AUTH_PIPELINE = (
 
 AUTHENTICATION_BACKENDS = (
     'social.backends.google.GoogleOAuth2',
-    # 'social.backends.facebook.Facebook2OAuth2',
+    'social.backends.facebook.Facebook2OAut/h2',
     'django.contrib.auth.backends.ModelBackend',
 )
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '39904698833-j51ag1e78mvdro5qoirvja24gp3j7n72.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'q_F7AhWD0JV-rojkV8Zk-LYI'
 
-# SOCIAL_AUTH_FACEBOOK_KEY = '234807823625564'
-# SOCIAL_AUTH_FACEBOOK_SECRET = '3f1857f5257218cc89bfbece4ebf796f'
+SOCIAL_AUTH_FACEBOOK_KEY = '234807823625564'
+SOCIAL_AUTH_FACEBOOK_SECRET = '3f1857f5257218cc89bfbece4ebf796f'
 
 # request email from facebook
-# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
-# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    # 'fields': 'id, name, email, age_range'
-# }
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id, name, email, age_range'
+}
 
 # CRON JOB
 
